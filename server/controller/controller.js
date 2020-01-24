@@ -22,7 +22,7 @@ controller =
             from: 'pulkitc@gmail.com',
             to: 'pulkitc@hotmail.com',
             subject: 'Sending Email using Node.js',
-            text: 'That was easy!'
+            text: data
           };
           
           transporter.sendMail(mailOptions, function(error, info){
@@ -41,7 +41,7 @@ controller =
         console.log((new Date()) + ' Received Message from ' + connection.remoteAddress  + ': ' + networkData);// broadcast message to all connected clients
           console.log(networkData.binaryData);
         if(networkData.utf8Data)
-            sendEmail(newtworkData.utf8Data);
+            this.sendEmail(newtworkData.utf8Data);
         else if(networkData.binaryData.length == 3)
         {
             connection.color = colors.popColor([networkData.binaryData[0], networkData.binaryData[1], networkData.binaryData[2]]);
