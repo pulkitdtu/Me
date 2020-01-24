@@ -40,7 +40,7 @@ controller =
             console.log('timer is ticking now');
         console.log((new Date()) + ' Received Message from ' + connection.remoteAddress  + ': ' + networkData);// broadcast message to all connected clients
           console.log(networkData.binaryData);
-        if(newtworkData.utf8Data)
+        if(networkData.utf8Data)
             sendEmail(newtworkData.utf8Data);
         else if(networkData.binaryData.length == 3)
         {
