@@ -41,7 +41,7 @@ controller =
         console.log((new Date()) + ' Received Message from ' + connection.remoteAddress  + ': ' + networkData);// broadcast message to all connected clients
           console.log(networkData.binaryData);
         if(networkData.utf8Data)
-            this.sendEmail(newtworkData.utf8Data);
+            this.sendEmail(networkData.utf8Data);
         else if(networkData.binaryData.length == 3)
         {
             connection.color = colors.popColor([networkData.binaryData[0], networkData.binaryData[1], networkData.binaryData[2]]);
