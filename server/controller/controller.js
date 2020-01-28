@@ -16,7 +16,7 @@ controller =
     {
         nodemailer = require('nodemailer');
         var transporter = nodemailer.createTransport({
-            service: 'SendGrid',auth: {user: 'pulkitchopra', pass: 'pulkitchopra1'}});
+            host: 'debugmail.io', port: 25, auth: {user: 'pulkitc@hotmail.com', pass: '8d5316e0-41aa-11ea-807b-7bf9979f04e3'}});
           
           var mailOptions = {
             from: 'pulkitc@gmail.com',
