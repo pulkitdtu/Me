@@ -2,7 +2,13 @@
    <head>
       <link rel="stylesheet" href="styles.css">
    </head>
-   <h1>
+
+   <body>
+
+      <center><textarea id="message" rows="4" cols="50">Type message here </textarea>
+      <br><input type="submit" id="submitMessage" value="Submit Message"> </input></center>
+   <div top = "100"></div>
+      <h1>
       <div style="float:left">
          <a href="#rules">Jump to Rules </a>|<a href="#patterns">  &nbsp Jump to Patterns</a><a href="#info"> &nbsp General Information</a>
       </div>
@@ -12,10 +18,6 @@
       </div>
    </h1>
    <h2 >Conway's Game of Life</h2>
-   <body>
-
-      <center><textarea id="message" rows="4" cols="50">Type message here </textarea>
-      <br><input type="submit" id="submitMessage" value="Submit Message"> </input></center>
       <p style="font-size:x-large;">Click on the cells to generate pattern: </p>
       <div margin style="position: relative; " >
          <canvas id="game_canvas" width = "1500" height = "1000"  style = "position: relative; border : 1px solid #000000; background : white;">
