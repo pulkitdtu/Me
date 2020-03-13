@@ -64,7 +64,7 @@ document.getElementById("submitMessage").addEventListener("click", submitMessage
 
 function submitMessage()
 {
-    var text = document.getElementById("message").textContent;
+    var text = document.getElementById("message").value;
     window.controller.socket.send(text);
 }
 
